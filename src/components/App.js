@@ -16,8 +16,8 @@ class App extends React.Component {
     return(
       <>
       <Menu>
-        <a id="Basic" className="menu-item" href="/Basic">Basic</a>
-        <a id="Adv" className="menu-item" href="/Adv">Advanced</a>
+        <a id="Basic" className="menu-item" href="/Basic">Basic NLP</a>
+        <a id="Adv" className="menu-item" href="/Adv">Advanced NLP</a>
       </Menu>
       <Container className='App-header'>
         Home Page
