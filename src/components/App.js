@@ -22,39 +22,37 @@ class App extends React.Component {
         <a id="Basic" className="menu-item" href="/Basic">Basic NLP</a>
         <a id="Adv" className="menu-item" href="/Adv">Advanced NLP</a>
         <a id="Sent" className="menu-item" href="/Sentences">Sentences</a>
-        <a id="JForm" className="menu-item" href="/Sentences">J Form</a>
-        <a id="NLPj" className="menu-item" href="/Sentences">NLP J</a>
+        <a id="JForm" className="menu-item" href="/JForm">J Form</a>
+        <a id="NLPj" className="menu-item" href="/NLPJ">NLP J</a>
       </Menu>
       <Container className='App-header'>
         Home Page
       </Container>
       <Container className='App-body'>
-        <Row>
-          <Col>
+        <Row className='App-container'>
+          <Col >
             <Link to="/Basic">
-              <Button attribute='primary'> Basic </Button>
+              <Button attribute='primary'> Basic NLP </Button>
             </Link>
           </Col>
           <Col>
             <Link to="/Adv">
-              <Button attribute='primary'> Advanced </Button>
+              <Button attribute='primary'> Advanced NLP </Button>
             </Link>
           </Col>
-        </Row>
-        <Row>
           <Col>
             <Link to="/Sentences">
-              <Button attribute='primary'> Sentences </Button>
+              <Button attribute='primary'> Sentences Survey </Button>
             </Link>
           </Col>
           <Col>
             <Link to="/JForm">
-              <Button attribute='primary'> J Form </Button>
+              <Button attribute='primary'> Japanese Levels of Formality </Button>
             </Link>
           </Col>
           <Col>
             <Link to="/NLPj">
-              <Button attribute='primary'> NLP J </Button>
+              <Button attribute='primary'> NLP for Japanese </Button>
             </Link>
           </Col>
         </Row>

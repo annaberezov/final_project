@@ -39,6 +39,13 @@
   color: #61dafb;
 }
 
+.App-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
 
 @keyframes App-logo-spin {
   from {
