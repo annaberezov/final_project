@@ -14,30 +14,31 @@
 }
 
 .App-header {
-  background-color: #373a47;
+  background-color: white;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-body {
-  background-color: #373a47;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: left;
   font-size: calc(5px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {
@@ -51,7 +52,7 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
-  width: 36px;
+  width: 30px;
   height: 30px;
   left: 36px;
   top: 36px;
@@ -59,12 +60,12 @@
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: #1e38ac;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: #a90000;
+  background: #ffffff;
 }
 
 /* Position and sizing of clickable cross button */
@@ -90,8 +91,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* General sidebar styles */
 .bm-menu {
   background: #373a47;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
+  padding: 2em .5em 0;
+  font-size: 1.75em;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -102,12 +103,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
-  padding: 0.8em;
+  padding: .2em;
 }
 
 /* Individual item */
 .bm-item {
-  display: inline-block;
+  display: flex;
 }
 
 /* Styling of overlay */

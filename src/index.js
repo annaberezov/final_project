@@ -6,6 +6,9 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import App from './components/App';
 import Basic from './components/Basic';
 import Adv from './components/Adv';
+import Sent from './components/Sentences';
+import NLPj from './components/NLPj';
+import JForm from './components/JForm';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
@@ -17,6 +20,9 @@ const rootElement = document.getElementById("root");
         <Route exact path="/" component={App} />
         <Route path="/basic" component={Basic} />
         <Route path="/adv" component={Adv} />
+        <Route path="/sentences" component={Sent} />
+        <Route path="/NLPj" component={NLPj} />
+        <Route path="/JForm" component={JForm} />
       </Switch>
       </BrowserRouter>,
       rootElement

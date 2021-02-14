@@ -5,7 +5,7 @@ import { slide as Menu } from 'react-burger-menu';
 import './App.css';
 
 
-class Adv extends React.Component {
+class Sentences extends React.Component {
   showSettings (event) {
     event.preventDefault();
   }
@@ -19,10 +19,11 @@ class Adv extends React.Component {
         <a id="Sent" className="menu-item" href="/Sentences">Sentences</a>
         <a id="JForm" className="menu-item" href="/Sentences">J Form</a>
         <a id="NLPj" className="menu-item" href="/Sentences">NLP J</a>
+
       </Menu>
       </>
   );
   }
 }
 
-export default Adv;
+export default Sentences;

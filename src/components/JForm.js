@@ -5,7 +5,7 @@ import { slide as Menu } from 'react-burger-menu';
 import './App.css';
 
 
-class Adv extends React.Component {
+class JForm extends React.Component {
   showSettings (event) {
     event.preventDefault();
   }
@@ -25,4 +25,4 @@ class Adv extends React.Component {
   }
 }
 
-export default Adv;
+export default JForm;
