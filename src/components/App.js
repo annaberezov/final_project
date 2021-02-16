@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button';
 import { slide as Menu } from 'react-burger-menu';
+import Image from 'react-bootstrap/Image'
 
 
 import './App.css';
@@ -25,35 +26,39 @@ class App extends React.Component {
         <a id="JForm" className="menu-item" href="/JForm">J Form</a>
         <a id="NLPj" className="menu-item" href="/NLPJ">NLP J</a>
       </Menu>
-      <Container className='App-header'>
+      <Container fluid className='App-header'>
         Home Page
+      </Container>
+      <Image src="https://orientalsouls.com/wp-content/uploads/2018/09/JPSymbol01.jpg" fluid />
+      <Container className='App-info'>
+          This is all the information about the app basically i think i will also put a fun visial in here
       </Container>
       <Container className='App-body'>
         <Row className='App-container'>
-          <Col >
-            <Link to="/Basic">
-              <Button attribute='primary'> Basic NLP </Button>
-            </Link>
+          <Col>
+            <NavLink to="/Basic">
+              <Button> Basic NLP </Button>
+            </NavLink>
           </Col>
           <Col>
-            <Link to="/Adv">
-              <Button attribute='primary'> Advanced NLP </Button>
-            </Link>
+            <NavLink to="/Adv">
+              <Button> Advanced NLP </Button>
+            </NavLink>
           </Col>
           <Col>
-            <Link to="/Sentences">
-              <Button attribute='primary'> Sentences Survey </Button>
-            </Link>
+            <NavLink to="/Sentences">
+              <Button> Sentences Survey </Button>
+            </NavLink>
           </Col>
           <Col>
-            <Link to="/JForm">
-              <Button attribute='primary'> Japanese Levels of Formality </Button>
-            </Link>
+            <NavLink to="/JForm">
+              <Button> Japanese Levels of Formality </Button>
+            </NavLink>
           </Col>
           <Col>
-            <Link to="/NLPj">
-              <Button attribute='primary'> NLP for Japanese </Button>
-            </Link>
+            <NavLink to="/NLPj">
+              <Button> NLP for Japanese </Button>
+            </NavLink>
           </Col>
         </Row>
     </Container>

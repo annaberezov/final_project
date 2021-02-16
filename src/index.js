@@ -17,7 +17,7 @@ const rootElement = document.getElementById("root");
     ReactDOM.render(
       <BrowserRouter>
        <Switch>
-        <Route exact path="/" component={App} />
+        <Route exact path="/" className='App-body' component={App} />
         <Route path="/basic" component={Basic} />
         <Route path="/adv" component={Adv} />
         <Route path="/sentences" component={Sent} />
