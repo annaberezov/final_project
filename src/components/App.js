@@ -7,9 +7,7 @@ import Button from 'react-bootstrap/Button';
 import { slide as Menu } from 'react-burger-menu';
 import Image from 'react-bootstrap/Image'
 
-
 import './App.css';
-
 
 class App extends React.Component {
   showSettings (event) {
