@@ -31,7 +31,10 @@ class App extends React.Component {
       </Container>
       <Image src="https://orientalsouls.com/wp-content/uploads/2018/09/JPSymbol01.jpg" fluid />
       <Container className='App-info'>
-          This is all the information about the app basically i think i will also put a fun visial in here
+          Hello and Welcome to this app! 
+      </Container>
+      <Container className='App-info'>
+          It is a hub for information all things Japanese to English translation. Please use the buttons to navigate to other pages.
       </Container>
       <Container className='App-body'>
         <Row className='App-container'>
