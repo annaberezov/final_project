@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(20px + 2vmin);
-  font-family: Garamond, serif;
+  font-family: Times, serif;
   color: white;
 }
 
@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: left;
   font-size: calc(5px + 2vmin);
-  font-family: Garamond, serif;
+  font-family: Times, serif;
   color: white;
   height: fit-content;
 }
@@ -48,8 +48,8 @@
   display: inline-block;
   color: white;
   margin: 10px;
-  font-size: calc(10px + 2vmin);
-  font-family: Garamond, serif;
+  font-size: calc(9px + 2vmin);
+  font-family: Times, serif;
   line-height: 1.33;
 }
 
@@ -60,8 +60,8 @@
   align-items: flex-start;
   text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  font-family: Garamond, serif;
+  font-size: calc(9px + 2vmin);
+  font-family: Times, serif;
   align-content: space-around;
   color: white;
 }
@@ -110,7 +110,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: #3e3747;
   padding: 2em .5em 0;
   font-size: 1.75em;
-  font-family: Garamond, serif;
+  font-family: Times, serif;
 }
 
 /* Morph shape necessary with bubble or elastic */
