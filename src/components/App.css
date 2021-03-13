@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color:  #3e3747;
 }
 
 .App-header {
@@ -16,14 +17,36 @@
 
 .App-body {
   background-color: #3e3747;
-  height: 100vh;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: left;
   font-size: calc(5px + 2vmin);
   font-family: Times, serif;
+  color: white;
+  height: fit-content;
+}
+.App-links {
+  background-color:  #3e3747;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  font-size: calc(12px + 2vmin);
+  font-family: Times, serif;
+  color: white;
+}
+
+.App-section {
+  background-color: #3e3747;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  font-family: Times, serif;
+  font-weight: bold;
   color: white;
   height: fit-content;
 }

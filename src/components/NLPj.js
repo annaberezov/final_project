@@ -1,9 +1,11 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image'
 
 
 import './App.css';
+import { ListGroup } from 'react-bootstrap';
 
 
 class NLPj extends React.Component {
@@ -22,11 +24,30 @@ class NLPj extends React.Component {
         <a id="NLPj" className="menu-item" href="/NLPJ">NLP J</a>
       </Menu>
       <Container fluid className='App-header'>
-        NLPJ
+        NLP for Japanese 
+      </Container>
+      <Container className='App-section'>
+        Modes
       </Container>
       <Container className='App-body'>
-        Hello
+        <Container className='App-text'>
+        There has already been extensive work done for Natural Language Processing in Japanese. With just Google Translate, the standard typing input is available along with handwriting character input. The character image detection feature is also available for Japanese. With all these avenues for input, using Google Translate for Japanese is great for users travelling to Japan, trying to experience Japanese culture, or learn simple, everyday Japanese. Aside from Google, there are several other applications and tools which are being developed to improve machine understanding of Japanese. A lot of these tools are written as a Python library with the core of the processing done in more powerful languages such as C, C++,  but some are written fully in Python.
+        Here is a diagram from the 2019 PyCon Japan which documents some tools for Japanese NLP
+        </Container>
+        <Image src="https://miro.medium.com/max/700/1*QmDgIiirGaLZ42XtnPa9cg.png" fluid rounded />
       </Container>
+      <Container className='App-section'>
+        Additional Resources
+      </Container>
+      <Container className ='App-body'>
+        <Container className='App-links'>
+          <ListGroup variant="flush">
+            <ListGroup.Item variant = "dark" action href = "https://towardsdatascience.com/an-overview-of-nlp-libraries-for-japanese-be1805837143">An Overview of Japanese NLP Libraries</ListGroup.Item>
+            <ListGroup.Item variant = "dark" action href = "https://www.ninjal.ac.jp/english/">National Institute for Japanese Language and Languistics</ListGroup.Item>
+            <ListGroup.Item variant = "dark" action href = "https://www.dampfkraft.com/nlp.html">Dampfkraft-Natural Language Processing</ListGroup.Item>
+          </ListGroup>
+        </Container>
+      </Container>     
       </>
   );
   }
