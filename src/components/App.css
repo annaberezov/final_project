@@ -26,6 +26,20 @@
   color: white;
   height: fit-content;
 }
+
+.App-buttonContain {
+  background-color: #3e3747;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Times, serif;
+  color: white;
+  line-height: 1.33;
+  padding: 2cm;
+  height: fit-content;
+}
+
 .App-links {
   background-color:  #3e3747;
   min-height: 10vh;
@@ -58,12 +72,11 @@
 .App-container {
   background-color:  #3e3747;
   display: flex;
-  flex-direction: row;
-  flex: .1;
+  flex-direction: column;
   overflow: hidden;
   justify-content: center;
   align-content: space-around;
-  height: fit-content;
+  height: 49vh;
 }
 
 .App-text {
@@ -71,7 +84,7 @@
   display: inline-block;
   color: white;
   margin: 10px;
-  font-size: calc(9px + 2vmin);
+  font-size: calc(10px + 2vmin);
   font-family: Times, serif;
   line-height: 1.33;
 }
@@ -83,7 +96,7 @@
   align-items: flex-start;
   text-align: center;
   justify-content: center;
-  font-size: calc(9px + 2vmin);
+  font-size: calc(10px + 2vmin);
   font-family: Times, serif;
   align-content: space-around;
   color: white;

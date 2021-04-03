@@ -28,40 +28,39 @@ class App extends React.Component {
         Home Page
       </Container>
       <Image src="https://orientalsouls.com/wp-content/uploads/2018/09/JPSymbol01.jpg" fluid />
+      <Container className='App-container'>
       <Container className='App-info'>
-          Hello and Welcome to this app! 
+          This application is a hub for information all things Japanese to English translation as well as Japanese Natural language processing.
       </Container>
-      <Container className='App-info'>
-          It is a hub for information all things Japanese to English translation. Please use the buttons to navigate to other pages.
-      </Container>
-      <Container className='App-body'>
-        <Row className='App-container'>
+      <Container className='App-container'>
+        <Row className='App-buttonContain'>
           <Col>
             <NavLink to="/Basic">
-              <Button> Basic NLP </Button>
+              <Button variant="light" size="m" block> Basic NLP </Button>
             </NavLink>
           </Col>
           <Col>
             <NavLink to="/Adv">
-              <Button> Logic-Based NLP </Button>
+              <Button variant="light" size="m" block> Logic-Based NLP </Button>
             </NavLink>
           </Col>
           <Col>
             <NavLink to="/Sentences">
-              <Button> Sentences Survey </Button>
+              <Button variant="light" size="m" block> Sample Tree </Button>
             </NavLink>
           </Col>
           <Col>
             <NavLink to="/JForm">
-              <Button> Japanese Levels of Formality </Button>
+              <Button variant="light" size="m" block> Levels of Formality </Button>
             </NavLink>
           </Col>
           <Col>
             <NavLink to="/NLPj">
-              <Button> NLP for Japanese </Button>
+              <Button variant="light" size="m" block> NLP for Japanese </Button>
             </NavLink>
           </Col>
         </Row>
+    </Container>
     </Container>
       </>
   );

@@ -1,6 +1,9 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
+import sample from './sample.PNG';
+import sampleverb from './sample-verb.PNG';
 
 
 
@@ -23,10 +26,25 @@ class Sentences extends React.Component {
         <a id="NLPj" className="menu-item" href="/NLPJ">NLP J</a>
       </Menu>
       <Container fluid className='App-header'>
-        Sentences
+        Sample Model
       </Container>
       <Container className='App-body'>
-        Hello
+        <Container className='App-body'>
+          <Container className='App-text'>
+          This is an example parsing done on a sentence using fugashi, a tool for tokeninzing japanese. It starts with a Japanese sentence.
+          </Container>
+          <Image src={sample} fluid rounded />
+          <Container className='App-text'>
+          This sentence translates to "My teacher goes to Tokyo often" but it is in formal tone since the subject is a teacher who is spoken about with respect. Now, we want to focus on 
+          the verb here in the sentence.
+          </Container>
+          <Image src={sampleverb} fluid rounded />
+          <Container className='App-text'>
+          In order to tell the computer to focus on the verb, we use the fugashi tagger and instruct it to extract any words which are recognized as verbs. In this sample,
+          the verb we are working with is the formal version of the verb to go. Becuase of this, we tell our model that this has to be formal since it is using this special
+          verb which is always formal.
+          </Container>
+        </Container>
       </Container>
       </>
   );
