@@ -15,6 +15,7 @@ import './index.css';
 
 const rootElement = document.getElementById("root");
     ReactDOM.render(
+      // The BrowserRouter is used here to create "routes" for the appliaction. these routes are used to navigate between pages on the app
       <BrowserRouter>
        <Switch>
         <Route exact path="/" className='App-body' component={App} />
