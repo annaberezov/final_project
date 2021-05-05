@@ -12,6 +12,7 @@ class Basic extends React.Component {
   render() {
     return(
       <>
+      {/* This is the hamburger menu with references to direct to other pages */}
       <Menu>
         <a id="Home" className="menu-item" href="/">Home</a>
         <a id="Basic" className="menu-item" href="/Basic">Basic NLP</a>

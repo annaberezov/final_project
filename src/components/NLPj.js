@@ -15,7 +15,8 @@ class NLPj extends React.Component {
   render() {
     return(
       <>
-      <Menu>
+      {/* This is the hamburger menu with references to direct to other pages */}
+      <Menu> 
         <a id="Home" className="menu-item" href="/">Home</a>
         <a id="Basic" className="menu-item" href="/Basic">Basic NLP</a>
         <a id="Adv" className="menu-item" href="/Adv">Logic-Based NLP</a>
@@ -42,6 +43,7 @@ class NLPj extends React.Component {
       </Container>
       <Container className ='App-body'>
         <Container className='App-links'>
+          {/* this ListGroup is a react bootstrap compotent which groups these three buttons and allows for the user to navigate to these pages outside of the application */}
           <ListGroup variant="flush">
             <ListGroup.Item variant = "dark" action href = "https://towardsdatascience.com/an-overview-of-nlp-libraries-for-japanese-be1805837143">An Overview of Japanese NLP Libraries</ListGroup.Item>
             <ListGroup.Item variant = "dark" action href = "https://www.ninjal.ac.jp/english/">National Institute for Japanese Language and Languistics</ListGroup.Item>

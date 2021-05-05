@@ -8,7 +8,7 @@ import { slide as Menu } from 'react-burger-menu';
 import Image from 'react-bootstrap/Image'
 
 import './App.css';
-
+// this is the landingb page of the application
 class App extends React.Component {
   showSettings (event) {
     event.preventDefault();
@@ -16,6 +16,7 @@ class App extends React.Component {
   render() {
     return(
       <>
+      {/* This is the hamburger menu with references to direct to other pages */}
       <Menu>
         <a id="Home" className="menu-item" href="/">Home</a>
         <a id="Basic" className="menu-item" href="/Basic">Basic NLP</a>
@@ -32,6 +33,7 @@ class App extends React.Component {
       <Container className='App-info'>
           This application is a hub for information all things Japanese to English translation as well as Japanese Natural language processing.
       </Container>
+      {/* this container contains the buttons to redirect to other pages using NavLink, a bootstrap component */}
       <Container className='App-container'>
         <Row className='App-buttonContain'>
           <Col>
